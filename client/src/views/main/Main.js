@@ -27,7 +27,6 @@ const Main = () => {
     if (event1.target.checked === false) {
       client.publish('LED', '1-0')
       setText1('LED 1  is OFF')
-      console.log(1)
     } else if (event1.target.checked === true) {
       client.publish('LED', '1-1')
       setText1('LED 1 is ON')
@@ -41,7 +40,6 @@ const Main = () => {
     if (event2.target.checked === false) {
       client.publish('LED', '2-0')
       setText2('LED 2  is OFF')
-      console.log(1)
     } else if (event2.target.checked === true) {
       client.publish('LED', '2-1')
       setText2('LED 2 is ON')

@@ -29,9 +29,9 @@ const Dashboard = () => {
         <CCardBody>
           <CCardTitle>Lab 5</CCardTitle>
           <CCardText className="p-0 m-0">Thành viên nhóm:</CCardText>
-          <CCardText className="p-0 m-0">18521437 - Lê Thịnh</CCardText>
-          <CCardText className="p-0 m-0">18521002 - Bùi Tấn Lộc</CCardText>
-          <CCardText className="p-0 m-0">18520719 - Trương Vĩ Hào</CCardText>
+          <CCardText className="p-0 m-0">Lâm Lê Đình Khang - 18520885</CCardText>
+          <CCardText className="p-0 m-0">Đinh Xuân Hùng - 18520791</CCardText>
+          <CCardText className="p-0 m-0">Lê Trần Bảo Nam - 18521123</CCardText>
         </CCardBody>
       </CCard>
       <CCard style={{ width: '18rem' }}>

@@ -90,7 +90,11 @@ const Login = () => {
                     </CInputGroup>
                     <CRow>
                       <CCol xs={6}>
-                        <CButton type="submit" color="primary" className="px-4">
+                        <CButton
+                          type="submit"
+                          className="px-4"
+                          style={{ background: '#32c2d6', border: '1px solid #32c2d6' }}
+                        >
                           Login
                         </CButton>
                       </CCol>
@@ -103,7 +107,7 @@ const Login = () => {
                   </CForm>
                 </CCardBody>
               </CCard>
-              <CCard className="text-white bg-primary py-5" style={{ width: '44%' }}>
+              <CCard className="text-white  py-5" style={{ width: '44%', background: '#55cdde' }}>
                 <CCardBody className="text-center">
                   <div>
                     <h2>Sign up</h2>
@@ -112,7 +116,12 @@ const Login = () => {
                       tempor incididunt ut labore et dolore magna aliqua.
                     </p> */}
                     <Link to="/register">
-                      <CButton color="primary" className="mt-3" active tabIndex={-1}>
+                      <CButton
+                        className="mt-3"
+                        active
+                        tabIndex={-1}
+                        style={{ background: '#32c2d6', border: '1px solid #169db0' }}
+                      >
                         Register Now!
                       </CButton>
                     </Link>
