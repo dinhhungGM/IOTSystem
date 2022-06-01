@@ -140,7 +140,7 @@ const WidgetsDropdownForMain = () => {
         <CWidgetStatsA
           className="mb-4"
           color="warning"
-          value={<>{light?.Value} lux</>}
+          value={<>{light?.Value}lux</>}
           title="Ánh sáng"
           chart={
             <CChartLine

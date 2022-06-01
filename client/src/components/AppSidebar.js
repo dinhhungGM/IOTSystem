@@ -1,19 +1,11 @@
-import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-
 import { CSidebar, CSidebarBrand, CSidebarNav, CSidebarToggler } from '@coreui/react'
-import CIcon from '@coreui/icons-react'
-
-import { AppSidebarNav } from './AppSidebarNav'
-
-import { logoNegative } from 'src/assets/brand/logo-negative'
-import { sygnet } from 'src/assets/brand/sygnet'
-
+import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import SimpleBar from 'simplebar-react'
 import 'simplebar/dist/simplebar.min.css'
-
 // sidebar nav config
 import navigation from '../_nav'
+import { AppSidebarNav } from './AppSidebarNav'
 
 const AppSidebar = () => {
   const dispatch = useDispatch()
@@ -29,9 +21,10 @@ const AppSidebar = () => {
         dispatch({ type: 'set', sidebarShow: visible })
       }}
     >
-      <CSidebarBrand className="d-none d-md-flex" to="/">
-        <CIcon className="sidebar-brand-full" icon={logoNegative} height={35} />
-        <CIcon className="sidebar-brand-narrow" icon={sygnet} height={35} />
+      <CSidebarBrand className="d-none d-md-flex align-items-center" to="/">
+        <img src="logo.png" alt="test" height={35} />
+        <p className="d-flex align-content-center m-0">UiTiOt</p>
+        {/* <CIcon className="sidebar-brand-narrow" icon={sygnet} height={35} /> */}
       </CSidebarBrand>
       <CSidebarNav>
         <SimpleBar>
