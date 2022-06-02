@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 mongoose.connect(
-  "mongodb+srv://thinh:123@cluster0.ydjcp.mongodb.net/SensorValue",
+  "mongodb+srv://l156123:660097@cluster0.ifpr5pp.mongodb.net/IOT?retryWrites=true&w=majority",
   async (err) => {
     if (!err) {
       // const adpassword = "password"

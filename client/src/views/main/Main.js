@@ -1,8 +1,9 @@
 import { CRow } from '@coreui/react'
+import axios from 'axios'
 import React from 'react'
 import WidgetsDropdownForMain from '../widgets/WidgetsDropdownForMain'
 const mqtt = require('precompiled-mqtt')
-const client = mqtt.connect('ws://localhost:9001/ws')
+const client = mqtt.connect('ws://172.31.250.193:9001/ws')
 client.on('connect', function () {
   client.subscribe('test', function (err) {
     if (!err) {
@@ -25,10 +26,14 @@ const Main = () => {
     console.log(checked1)
     console.log(event1.target.checked)
     if (event1.target.checked === false) {
-      client.publish('LED', '1-0')
+      axios.post('http://172.31.250.209:4000/api/led', {
+        value: '1-0',
+      })
       setText1('LED 1  is OFF')
     } else if (event1.target.checked === true) {
-      client.publish('LED', '1-1')
+      axios.post('http://172.31.250.209:4000/api/led', {
+        value: '1-1',
+      })
       setText1('LED 1 is ON')
       console.log(0)
     }
@@ -38,10 +43,14 @@ const Main = () => {
     console.log(checked1)
     console.log(event2.target.checked)
     if (event2.target.checked === false) {
-      client.publish('LED', '2-0')
+      axios.post('http://172.31.250.209:4000/api/led', {
+        value: '2-0',
+      })
       setText2('LED 2  is OFF')
     } else if (event2.target.checked === true) {
-      client.publish('LED', '2-1')
+      axios.post('http://172.31.250.209:4000/api/led', {
+        value: '2-1',
+      })
       setText2('LED 2 is ON')
       console.log(0)
     }

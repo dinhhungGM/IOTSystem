@@ -108,7 +108,7 @@ const Charts = () => {
     datasets: [
       {
         label: 'Cảm biến ánh sáng',
-        data: [50, 100, 200, 70, 150, 200],
+        data: [50, 100, 200, 70, 150, 6000, 65000],
         borderColor: 'rgb(96 165 250)',
         backgroundColor: 'rgb(96 165 250)',
         fill: false,
@@ -202,7 +202,7 @@ const Charts = () => {
     datasets: [
       {
         label: 'Cảm biến nhiệt độ',
-        data: [50, 100, 200, 70, 150, 500],
+        data: [50, 30, 80, 60, 70, 80],
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
     ],
